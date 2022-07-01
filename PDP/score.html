@@ -501,7 +501,7 @@
 												<div class="row mb-8">
 													<!--begin::Col-->
 													<div class="col-6">
-														<select name="date_typer" aria-label="Select a Timezone" data-control="select2" data-placeholder="Period" class="form-select form-select-sm form-select-solid">
+														<select name="date_typer" aria-label="Select a Timezone" data-control="select2" data-placeholder="Period" class="form-select form-select-solid">
 															<option value="jan">Tháng 1</option>
 															<option value="feb">Tháng 2</option>
 															<option value="mar">Tháng 3</option>
@@ -520,7 +520,7 @@
 													<!--end::Col-->
 													<!--begin::Col-->
 													<div class="col-6">
-														<select name="date_typer" aria-label="Select a Timezone" data-control="select2" data-placeholder="Period" class="form-select form-select-sm form-select-solid">
+														<select name="date_typer" aria-label="Select a Timezone" data-control="select2" data-placeholder="Period" class="form-select form-select-solid">
 															<option value="jan">Tháng 1</option>
 															<option value="feb">Tháng 2</option>
 															<option value="mar">Tháng 3</option>
@@ -696,7 +696,7 @@
 													<div class="d-flex align-items-center bg-hover-lighten py-3 px-9">
 														<!--begin::Symbol-->
 														<div class="symbol symbol-40px symbol-circle me-5">
-															<span class="symbol-label bg-light-danger">
+															<span class="symbol-label">
 																<!--begin::Svg Icon | path: icons/duotone/Shopping/Credit-card.svg-->
 																<span class="svg-icon svg-icon-danger svg-icon-1">
 																	<img src="assets/media/avatars/hellogit.png" width="24" height="24" alt="">
@@ -966,34 +966,14 @@
 								<!--end::Title-->
 							</div>
 							<!--end::Heading-->		
-							<!--begin::Input group-->
-							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
-								<!--begin::Label-->
-								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
-									<span>Họ và tên: </span>
-								</label>
-								<!--end::Label-->
-								<input type="text" class="form-control form-control-solid" />
-							</div>
-							<!--end::Input group-->
-                            <!--begin::Input group-->
-							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
-								<!--begin::Label-->
-								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
-									<span>Email:</span>
-								</label>
-								<!--end::Label-->
-								<input type="text" class="form-control form-control-solid" />
-							</div>
-							<!--end::Input group-->
                             <!--begin::Input group-->
                             <div class="row mb-8">
-								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
-									<span>Điểm sự kiện:</span>
-								</label>
 								<div class="row">
-									<div class="col-md-10 fv-row">
-										<select name="date_typer" aria-label="Select a Timezone" data-control="select2" data-placeholder="Period" class="form-select form-select-sm form-select-solid">
+									<div class="col-md-6 fv-row">
+										<label class="d-flex align-items-center fs-6 fw-bold mb-2">
+											<span>Từ:</span>
+										</label>
+										<select name="date_typer" aria-label="Select a Timezone" data-control="select2" data-placeholder="Period" class="form-select form-select-solid">
 											<option value="jan">Tháng 1</option>
 											<option value="feb">Tháng 2</option>
 											<option value="mar">Tháng 3</option>
@@ -1008,39 +988,24 @@
 											<option value="dec">Tháng 12</option>
 										</select>
 									</div>
-									<div class="col-md-2 fv-row">
-										<input type="text" class="form-control form-control-solid"  style="margin-bottom:10px;"/>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-10 fv-row">
-										<output type="text" class="form-control form-control-solid" style="margin-bottom:10px;">Blockchain</output>
-									</div>
-									<div class="col-md-2 fv-row">
-										<input type="text" class="form-control form-control-solid"  style="margin-bottom:10px;"/>
-									</div>
-								</div>
-							</div>
-							<!--end::Input group-->
-                            <!--begin::Input group-->
-                            <div class="row mb-8">
-								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
-									<span>Điểm thái độ:</span>
-								</label>
-								<div class="row">
-									<div class="col-md-10 fv-row">
-										<output type="text" class="form-control form-control-solid" style="margin-bottom:10px;">HelloGIT</output>
-									</div>
-									<div class="col-md-2 fv-row">
-										<input type="text" class="form-control form-control-solid"  style="margin-bottom:10px;" />
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-10 fv-row">
-										<output type="text" class="form-control form-control-solid" style="margin-bottom:10px;">BizRes</output>
-									</div>
-									<div class="col-md-2 fv-row">
-										<input type="text" class="form-control form-control-solid"  style="margin-bottom:10px;" />
+									<div class="col-md-6 fv-row">
+										<label class="d-flex align-items-center fs-6 fw-bold mb-2">
+											<span>Đến:</span>
+										</label>
+										<select name="date_typer" aria-label="Select a Timezone" data-control="select2" data-placeholder="Period" class="form-select form-select-solid">
+											<option value="jan">Tháng 1</option>
+											<option value="feb">Tháng 2</option>
+											<option value="mar">Tháng 3</option>
+											<option value="apr">Tháng 4</option>
+											<option value="may">Tháng 5</option>
+											<option value="jun">Tháng 6</option>
+											<option value="jul">Tháng 7</option>
+											<option value="aug">Tháng 8</option>
+											<option value="sep">Tháng 9</option>
+											<option value="oct">Tháng 10</option>
+											<option value="nov">Tháng 11</option>
+											<option value="dec">Tháng 12</option>
+										</select>
 									</div>
 								</div>
 							</div>
@@ -1154,14 +1119,17 @@
 								</label>
 								<div class="row">
 									<div class="col-md-10 fv-row">
-										<select name="event_typer" aria-label="Select a Events" data-control="select_event" data-placeholder="Sự kiện" class="form-select form-select-sm form-select-solid">
+										<select name="event_typer" aria-label="Select a Event" data-control="select_event" data-placeholder="Sự kiện" class="form-select form-select-solid">
 											<option selected>Sự kiện</option>
 											<option value="">Greenwich Coding Challenge</option>
 											<option value="">Balance: Choose Your Work and Work Your Life</option>
 										</select>
 									</div>
 									<div class="col-md-2 fv-row">
-										<input type="text" class="form-control form-control-solid"  style="margin-bottom:10px;"/>
+										<select name="eventScore_typer" aria-label="Select a eventScore" data-control="select_eventScore" data-placeholder="Điểm sự kiện" class="form-select form-select-solid">
+											<option value="7"selected>7</option>
+											<option value="10">10</option>
+										</select>
 									</div>
 								</div>
 								<a href="">+ Thêm điểm sự kiện</a>
@@ -1174,14 +1142,25 @@
 								</label>
 								<div class="row">
 									<div class="col-md-10 fv-row">
-										<select name="event_typer" aria-label="Select a Events" data-control="select_event" data-placeholder="Sự kiện" class="form-select form-select-sm form-select-solid">
+										<select name="club_typer" aria-label="Select a Club" data-control="select_club" data-placeholder="Câu lạc bộ" class="form-select form-select-solid">
 											<option selected>Câu lạc bộ</option>
 											<option value="">HelloGIT</option>
 											<option value="">Greenwich Page Turner Club</option>
 										</select>
 									</div>
 									<div class="col-md-2 fv-row">
-										<input type="text" class="form-control form-control-solid"  style="margin-bottom:10px;"/>
+										<select name="attitudeScore_typer" aria-label="Select a attitudeScore" data-control="select_attitudeScore" data-placeholder="Điểm thái độ" class="form-select form-select-solid">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7"selected>7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
 									</div>
 								</div>
 								<a href="">+ Thêm điểm thái độ</a>
@@ -1274,25 +1253,38 @@
 							</div>
 							<!--end::Input group-->
                             <!--begin::Input group-->
-                            <div class="row mb-8">
-								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
-									<span>Điểm sự kiện:</span>
-								</label>
-								<div class="row">
-									<div class="col-md-10 fv-row">
-										<output type="text" class="form-control form-control-solid" style="margin-bottom:10px;">Greenwich Coding Challenge</output>
+                            <div>
+								<div class="row mb-8">
+									<label class="d-flex align-items-center fs-6 fw-bold mb-2">
+										<span>Điểm sự kiện:</span>
+									</label>
+									<div class="row" style="margin-bottom:10px;">
+										<div class="col-md-10 fv-row">
+											<output type="text" class="form-control form-control-solid">Greenwich Coding Challenge</output>
+										</div>
+										<div class="col-md-2 fv-row">
+											<select name="eventScore_typer" aria-label="Select a eventScore" data-control="select_eventScore" data-placeholder="Điểm sự kiện" class="form-select form-select-solid">
+												<option value="7"selected>7</option>
+												<option value="10">10</option>
+											</select>
+										</div>
 									</div>
-									<div class="col-md-2 fv-row">
-										<input type="text" class="form-control form-control-solid"  style="margin-bottom:10px;" placeholder="10"/>
+									<div class="row" style="margin-bottom:10px;">
+										<div class="col-md-10 fv-row">
+											<select name="event_typer" aria-label="Select a Event" data-control="select_event" data-placeholder="Sự kiện" class="form-select form-select-solid">
+												<option selected>Sự kiện</option>
+												<option value="">Greenwich Coding Challenge</option>
+												<option value="">Balance: Choose Your Work and Work Your Life</option>
+											</select>
+										</div>
+										<div class="col-md-2 fv-row">
+											<select name="eventScore_typer" aria-label="Select a eventScore" data-control="select_eventScore" data-placeholder="Điểm sự kiện" class="form-select form-select-solid">
+												<option value="7"selected>7</option>
+												<option value="10">10</option>
+											</select>
+										</div>
 									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-10 fv-row">
-										<output type="text" class="form-control form-control-solid" style="margin-bottom:10px;">Blockchain</output>
-									</div>
-									<div class="col-md-2 fv-row">
-										<input type="text" class="form-control form-control-solid"  style="margin-bottom:10px;" placeholder="10"/>
-									</div>
+									<a href="">+ Thêm điểm sự kiện</a>
 								</div>
 							</div>
 							<!--end::Input group-->
@@ -1301,22 +1293,49 @@
 								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
 									<span>Điểm thái độ:</span>
 								</label>
-								<div class="row">
+								<div class="row" style="margin-bottom:10px;">
 									<div class="col-md-10 fv-row">
-										<output type="text" class="form-control form-control-solid" style="margin-bottom:10px;">HelloGIT</output>
+										<output type="text" class="form-control form-control-solid">HelloGIT</output>
 									</div>
 									<div class="col-md-2 fv-row">
-										<input type="text" class="form-control form-control-solid"  style="margin-bottom:10px;" placeholder="10"/>
+										<select name="attitudeScore_typer" aria-label="Select a attitudeScore" data-control="select_attitudeScore" data-placeholder="Điểm thái độ" class="form-select form-select-solid">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7"selected>7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-10 fv-row">
-										<output type="text" class="form-control form-control-solid" style="margin-bottom:10px;">BizRes</output>
+										<select name="club_typer" aria-label="Select a Club" data-control="select_club" data-placeholder="Câu lạc bộ" class="form-select form-select-solid">
+											<option selected>Câu lạc bộ</option>
+											<option value="">HelloGIT</option>
+											<option value="">Greenwich Page Turner Club</option>
+										</select>
 									</div>
 									<div class="col-md-2 fv-row">
-										<input type="text" class="form-control form-control-solid"  style="margin-bottom:10px;" placeholder="10"/>
+										<select name="attitudeScore_typer" aria-label="Select a attitudeScore" data-control="select_attitudeScore" data-placeholder="Điểm thái độ" class="form-select form-select-solid">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7"selected>7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
 									</div>
 								</div>
+								<a href="">+ Thêm điểm thái độ</a>
 							</div>
 							<!--end::Input group-->
                             <!--begin::Actions-->
