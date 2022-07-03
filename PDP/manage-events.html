@@ -102,7 +102,7 @@
 									</span>
 									<div class="menu-sub menu-sub-accordion">
 										<div class="menu-item">
-											<a class="menu-link" href="#">
+											<a class="menu-link" data-bs-toggle="modal" data-bs-target="#pdp_new_event">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -335,6 +335,7 @@
 									<!--end::drawer toggle-->
 								</div>
 								<!--end:Add-->
+								<!--begin::Search-->
 								<div class="d-flex align-items-stretch ms-1 ms-lg-3">
 									<!--begin::Search-->
 									<div id="kt_header_search" class="d-flex align-items-stretch" data-kt-search-keypress="true" data-kt-search-min-length="2" data-kt-search-enter="enter" data-kt-search-layout="menu" data-kt-menu-trigger="auto" data-kt-menu-overflow="false" data-kt-menu-permanent="true" data-kt-menu-placement="bottom-end" data-kt-menu-flip="bottom">
@@ -343,13 +344,7 @@
 											<div class="btn btn-icon btn-active-light-primary">
 												<!--begin::Svg Icon | path: icons/duotone/General/Search.svg-->
 												<span class="svg-icon svg-icon-1">
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-														<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-															<rect x="0" y="0" width="24" height="24" />
-															<path d="M14.2928932,16.7071068 C13.9023689,16.3165825 13.9023689,15.6834175 14.2928932,15.2928932 C14.6834175,14.9023689 15.3165825,14.9023689 15.7071068,15.2928932 L19.7071068,19.2928932 C20.0976311,19.6834175 20.0976311,20.3165825 19.7071068,20.7071068 C19.3165825,21.0976311 18.6834175,21.0976311 18.2928932,20.7071068 L14.2928932,16.7071068 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
-															<path d="M11,16 C13.7614237,16 16,13.7614237 16,11 C16,8.23857625 13.7614237,6 11,6 C8.23857625,6 6,8.23857625 6,11 C6,13.7614237 8.23857625,16 11,16 Z M11,18 C7.13400675,18 4,14.8659932 4,11 C4,7.13400675 7.13400675,4 11,4 C14.8659932,4 18,7.13400675 18,11 C18,14.8659932 14.8659932,18 11,18 Z" fill="#000000" fill-rule="nonzero" />
-														</g>
-													</svg>
+													<img src="assets/media/svg/files/search.svg" width="24px" height="24px">
 												</span>
 												<!--end::Svg Icon-->
 											</div>
@@ -456,70 +451,6 @@
 												<!--end::Empty-->
 											</div>
 											<!--end::Wrapper-->
-											<!--begin::Preferences-->
-											<form data-kt-search-element="advanced-options-form" class="pt-1 d-none">
-												<!--begin::Heading-->
-												<h3 class="fw-bold text-dark mb-7">Tìm kiếm nâng cao</h3>
-												<!--end::Heading-->
-												<!--begin::Input group-->
-												<div class="row mb-8">
-													<!--begin::Col-->
-													<div class="col-6">
-														<select name="date_typer" aria-label="Select a Timezone" data-control="select2" data-placeholder="Period" class="form-select form-select-solid">
-															<option value="jan">Tháng 1</option>
-															<option value="feb">Tháng 2</option>
-															<option value="mar">Tháng 3</option>
-															<option value="apr">Tháng 4</option>
-															<option value="may">Tháng 5</option>
-															<option value="jun">Tháng 6</option>
-															<option value="jul">Tháng 7</option>
-															<option value="aug">Tháng 8</option>
-															<option value="sep">Tháng 9</option>
-															<option value="oct">Tháng 10</option>
-															<option value="nov">Tháng 11</option>
-															<option value="dec">Tháng 12</option>
-														</select>
-													</div>
-													<!--end::Col-->
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col-6">
-														<select name="date_typer" aria-label="Select a Timezone" data-control="select2" data-placeholder="Period" class="form-select form-select-solid">
-															<option value="jan">Tháng 1</option>
-															<option value="feb">Tháng 2</option>
-															<option value="mar">Tháng 3</option>
-															<option value="apr">Tháng 4</option>
-															<option value="may">Tháng 5</option>
-															<option value="jun">Tháng 6</option>
-															<option value="jul">Tháng 7</option>
-															<option value="aug">Tháng 8</option>
-															<option value="sep">Tháng 9</option>
-															<option value="oct">Tháng 10</option>
-															<option value="nov">Tháng 11</option>
-															<option value="dec">Tháng 12</option>
-														</select>
-													</div>
-													<!--end::Col-->
-												</div>
-												<!--end::Input group-->
-												<!--begin::Actions-->
-												<div class="d-flex justify-content-end">
-													<button type="reset" class="btn btn-sm btn-white fw-bolder btn-active-light-primary me-2" data-kt-search-element="advanced-options-form-cancel">Huỷ</button>
-													<a href="pages/search/horizontal.html" class="btn btn-sm fw-bolder btn-primary" data-kt-search-element="advanced-options-form-search">Tìm kiếm</a>
-												</div>
-												<!--end::Actions-->
-											</form>
-											<!--end::Preferences-->
-											<!--begin::Preferences-->
-											<form data-kt-search-element="preferences" class="pt-1 d-none">
-												<!--begin::Actions-->
-												<div class="d-flex justify-content-end pt-7">
-													<button type="reset" class="btn btn-sm btn-white fw-bolder btn-active-light-primary me-2" data-kt-search-element="preferences-dismiss">Cancel</button>
-													<button type="submit" class="btn btn-sm fw-bolder btn-primary">Save Changes</button>
-												</div>
-												<!--end::Actions-->
-											</form>
-											<!--end::Preferences-->
 										</div>
 										<!--end::Menu-->
 									</div>
@@ -532,10 +463,7 @@
 									<div class="btn btn-icon btn-active-light-primary position-relative w-30px h-30px w-md-40px h-md-40px" data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end" data-kt-menu-flip="bottom">
 										<!--begin::Svg Icon | path: icons/duotone/General/Notification2.svg-->
 										<span class="svg-icon svg-icon-1">
-											<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-												<path d="M6,9 L6,15 C6,16.6568542 7.34314575,18 9,18 L15,18 L15,18.8181818 C15,20.2324881 14.2324881,21 12.8181818,21 L5.18181818,21 C3.76751186,21 3,20.2324881 3,18.8181818 L3,11.1818182 C3,9.76751186 3.76751186,9 5.18181818,9 L6,9 Z" fill="#000000" fill-rule="nonzero" />
-												<path d="M10.1818182,4 L17.8181818,4 C19.2324881,4 20,4.76751186 20,6.18181818 L20,13.8181818 C20,15.2324881 19.2324881,16 17.8181818,16 L10.1818182,16 C8.76751186,16 8,15.2324881 8,13.8181818 L8,6.18181818 C8,4.76751186 8.76751186,4 10.1818182,4 Z" fill="#000000" opacity="0.3" />
-											</svg>
+											<img src="assets/media/svg/files/activity.svg" width="24px" height="24px">
 										</span>
 										<!--end::Svg Icon-->
 									</div>
@@ -600,13 +528,7 @@
 									<div class="btn btn-icon btn-active-light-primary position-relative w-30px h-30px w-md-40px h-md-40px" data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end" data-kt-menu-flip="bottom">
 										<!--begin::Svg Icon | path: icons/duotone/General/Notification2.svg-->
 										<span class="svg-icon svg-icon-1">
-											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-													<rect x="0" y="0" width="24" height="24" />
-													<path d="M13.2070325,4 C13.0721672,4.47683179 13,4.97998812 13,5.5 C13,8.53756612 15.4624339,11 18.5,11 C19.0200119,11 19.5231682,10.9278328 20,10.7929675 L20,17 C20,18.6568542 18.6568542,20 17,20 L7,20 C5.34314575,20 4,18.6568542 4,17 L4,7 C4,5.34314575 5.34314575,4 7,4 L13.2070325,4 Z" fill="#000000" />
-													<circle fill="#000000" opacity="0.3" cx="18.5" cy="5.5" r="2.5" />
-												</g>
-											</svg>
+											<img src="assets/media/svg/files/notification.svg" width="24px" height="24px" alt="">
 										</span>
 										<!--end::Svg Icon-->
 									</div>
@@ -768,12 +690,12 @@
                                             <tbody>
                                                 <tr>
                                                     <td class="text-nowrap align-middle">GEvS22001</td>
-                                                    <td class="text-nowrap align-middle"><a href="#">LEARNING BLOCKCHAIN: INTELLECTUAL PROPERTY ON THE BLOCKCHAIN</td>
+                                                    <td class="text-nowrap align-middle"><a href="pdp/event/learning-blockchain-intellectual-property-on-the-blockchain.html">LEARNING BLOCKCHAIN: INTELLECTUAL PROPERTY ON THE BLOCKCHAIN</td>
                                                     <td class="text-center align-middle">16/07/2022</td>
                                                     <td class="text-center align-middle">
                                                         <span class="badge badge-light-success fw-bolder fs-6">HelloGIT</span>
                                                     </td>
-													<td class="text-center align-middle"><a href="PDP/overview.html">Minh Toàn</a>
+													<td class="text-center align-middle"><a href="pdp/overview.html">Minh Toàn</a>
                                                     <td class="text-center align-middle">
                                                         <div class="btn-group align-top">
                                                             <button class="btn btn-secondary badge" type="button" data-bs-toggle="modal" data-bs-target="#pdp_edit_event">Sửa</button>
@@ -909,6 +831,17 @@
 							</div>
                             <a href="#">+ Thêm câu lạc bộ</a>
 							<!--end::Input group-->
+							<!--begin: upload eventBackground-->
+							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
+								<!--begin::Label-->
+								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
+									<span>Background sự kiện:</span>
+								</label>
+								<!--end::Label-->
+                                <input type="file" class="form-control form-control-solid" id="eventBackground">
+							</div>
+							<!--end: upload eventBackground-->							
+							<!--begin: QR code-->
                             <div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
 								<!--begin::Label-->
 								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
@@ -919,6 +852,7 @@
                                     <img src="assets/media/qrcode/testqr.png" width="120px;" height="120px" alt="">
                                 </div>
 							</div>
+							<!--end: QR code-->
                             <!--begin::Actions-->
 							<div class="text-center">
 								<button type="reset" id="kt_modal_new_target_cancel" class="btn btn-light me-3">Huỷ</button>    
@@ -1020,6 +954,16 @@
 							</div>
                             <a href="#">+ Thêm câu lạc bộ</a>
 							<!--end::Input group-->
+							<!--begin: upload eventBackground-->
+							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
+								<!--begin::Label-->
+								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
+									<span>Background sự kiện:</span>
+								</label>
+								<!--end::Label-->
+                                <input type="file" class="form-control form-control-solid" id="eventBackground">
+							</div>
+							<!--end: upload eventBackground-->		
                             <div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
 								<!--begin::Label-->
 								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
