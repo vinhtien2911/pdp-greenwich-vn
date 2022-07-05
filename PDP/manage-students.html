@@ -64,7 +64,7 @@
 									</a>
 								</div>
 								<div class="menu-item mb-1">
-									<a class="menu-link active" href="PDP/score.html">
+									<a class="menu-link" href="PDP/score.html">
 										<span class="menu-icon">
 											<!--begin::Svg Icon | path: icons/duotone/General/User.svg-->
 											<span class="svg-icon svg-icon-2">
@@ -102,7 +102,7 @@
 									</span>
 									<div class="menu-sub menu-sub-accordion">
 										<div class="menu-item">
-											<a class="menu-link" href="#">
+											<a class="menu-link" data-bs-toggle="modal" data-bs-target="#pdp_new_event">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -110,7 +110,7 @@
 											</a>
 										</div>
 										<div class="menu-item">
-											<a class="menu-link" href="PDP/events.html">
+											<a class="menu-link" href="PDP/manage-events.html">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -136,7 +136,7 @@
 									</span>
 									<div class="menu-sub menu-sub-accordion">
 										<div class="menu-item">
-											<a class="menu-link" href="#">
+											<a class="menu-link" data-bs-toggle="modal" data-bs-target="#pdp_new_club">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -144,7 +144,7 @@
 											</a>
 										</div>
 										<div class="menu-item">
-											<a class="menu-link" href="PDP/clubs.html">
+											<a class="menu-link" href="PDP/manage-clubs.html">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -153,7 +153,7 @@
 										</div>
 									</div>
 								</div>
-								<div data-kt-menu-trigger="click" class="menu-item menu-accordion mb-1">
+								<div data-kt-menu-trigger="click" class="menu-item show menu-accordion mb-1">
 									<span class="menu-link">
 										<span class="menu-icon">
 											<!--begin::Svg Icon | path: icons/duotone/General/User.svg-->
@@ -181,7 +181,7 @@
 											</a>
 										</div>
 										<div class="menu-item">
-											<a class="menu-link" href="students.html">
+											<a class="menu-link active" href="pdp/manage-students.html">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -191,7 +191,7 @@
 									</div>
 								</div>
 								<div data-kt-menu-trigger="click" class="menu-item menu-accordion mb-1">
-									<span class="menu-link" href="email.html">
+									<span class="menu-link">
 										<span class="menu-icon">
 											<!--begin::Svg Icon | path: icons/duotone/General/User.svg-->
 											<span class="svg-icon svg-icon-2">
@@ -215,7 +215,7 @@
 											</a>
 										</div>
 										<div class="menu-item">
-											<a class="menu-link" href="#">
+											<a class="menu-link" href="pdp/inbox.html">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -233,7 +233,7 @@
 									</div>
 								</div>
 								<div class="menu-item mb-1">
-									<a class="menu-link" href="account.html">
+									<a class="menu-link" href="pdp/system.html">
 										<span class="menu-icon">
 											<!--begin::Svg Icon | path: icons/duotone/General/User.svg-->
 											<span class="svg-icon svg-icon-2">
@@ -245,11 +245,11 @@
 											</span>
 											<!--end::Svg Icon-->
 										</span>
-										<span class="menu-title">Quản lý tài khoản</span>	
+										<span class="menu-title">Hệ thống</span>	
 									</a>
 								</div>
 								<div class="menu-item mb-1">
-									<a class="menu-link" href="faq.html">
+									<a class="menu-link" href="pdp/faq.html">
 										<span class="menu-icon">
 											<!--begin::Svg Icon | path: icons/duotone/General/User.svg-->
 											<span class="svg-icon svg-icon-2">
@@ -682,7 +682,7 @@
 					<!--end::Header-->
 					<!--begin::Content-->
 					<div class="content d-flex flex-column flex-column-fluid fs-6" id="kt_content">		
-						<!--begin::Score--> 
+						<!--begin::Student--> 
                         <div class="e-panel card" style="margin-left:10px; margin-right: 10px;" >
                             <div class="card-body" style="font-size:15px;">
                                 <div class="e-table">
@@ -698,11 +698,11 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
+                                                <tr> 
                                                     <td class="text-nowrap align-middle">GCS190159</td>
                                                     <td class="text-nowrap align-middle">Trần Vĩnh Tiến</td>
                                                     <td class="text-nowrap align-middle">tientvgcs190159@fpt.edu.vn</td>
-													<td class="text-center align-middle"><a href="#">Hệ thống</a>
+													<td class="text-center align-middle"><a href="#">Khánh Toàn</a>
                                                     <td class="text-center align-middle">
                                                         <div class="btn-group align-top">
                                                             <button class="btn btn-secondary badge" type="button" data-bs-toggle="modal" data-bs-target="#pdp_edit_student">Sửa</button>
@@ -740,7 +740,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!--end::Score-->
+                        <!--end::Student-->
                     </div>
                     <!--end::Content-->
                     <!--begin::Show result-->

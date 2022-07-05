@@ -64,7 +64,7 @@
 									</a>
 								</div>
 								<div class="menu-item mb-1">
-									<a class="menu-link active" href="PDP/score.html">
+									<a class="menu-link" href="PDP/score.html">
 										<span class="menu-icon">
 											<!--begin::Svg Icon | path: icons/duotone/General/User.svg-->
 											<span class="svg-icon svg-icon-2">
@@ -82,7 +82,7 @@
 										<span class="menu-title">Điểm số</span>
 									</a>
 								</div>
-								<div data-kt-menu-trigger="click" class="menu-item menu-accordion mb-1">
+								<div data-kt-menu-trigger="click" class="menu-item show menu-accordion mb-1">
 									<span class="menu-link">
 										<span class="menu-icon">
 											<!--begin::Svg Icon | path: icons/duotone/General/User.svg-->
@@ -110,7 +110,7 @@
 											</a>
 										</div>
 										<div class="menu-item">
-											<a class="menu-link" href="PDP/events.html">
+											<a class="menu-link active" href="PDP/manage-events.html">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -136,7 +136,7 @@
 									</span>
 									<div class="menu-sub menu-sub-accordion">
 										<div class="menu-item">
-											<a class="menu-link" href="#">
+											<a class="menu-link" data-bs-toggle="modal" data-bs-target="#pdp_new_club">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -144,7 +144,7 @@
 											</a>
 										</div>
 										<div class="menu-item">
-											<a class="menu-link" href="PDP/clubs.html">
+											<a class="menu-link" href="PDP/manage-clubs.html">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -173,7 +173,7 @@
 									</span>
 									<div class="menu-sub menu-sub-accordion">
 										<div class="menu-item">
-											<a class="menu-link" href="#">
+											<a class="menu-link" data-bs-toggle="modal" data-bs-target="#pdp_new_student">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -181,7 +181,7 @@
 											</a>
 										</div>
 										<div class="menu-item">
-											<a class="menu-link" href="students.html">
+											<a class="menu-link" href="pdp/manage-students.html">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -191,7 +191,7 @@
 									</div>
 								</div>
 								<div data-kt-menu-trigger="click" class="menu-item menu-accordion mb-1">
-									<span class="menu-link" href="email.html">
+									<span class="menu-link">
 										<span class="menu-icon">
 											<!--begin::Svg Icon | path: icons/duotone/General/User.svg-->
 											<span class="svg-icon svg-icon-2">
@@ -215,7 +215,7 @@
 											</a>
 										</div>
 										<div class="menu-item">
-											<a class="menu-link" href="#">
+											<a class="menu-link" href="pdp/inbox.html">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -233,7 +233,7 @@
 									</div>
 								</div>
 								<div class="menu-item mb-1">
-									<a class="menu-link" href="account.html">
+									<a class="menu-link" href="pdp/system.html">
 										<span class="menu-icon">
 											<!--begin::Svg Icon | path: icons/duotone/General/User.svg-->
 											<span class="svg-icon svg-icon-2">
@@ -245,11 +245,11 @@
 											</span>
 											<!--end::Svg Icon-->
 										</span>
-										<span class="menu-title">Quản lý tài khoản</span>	
+										<span class="menu-title">Hệ thống</span>	
 									</a>
 								</div>
 								<div class="menu-item mb-1">
-									<a class="menu-link" href="faq.html">
+									<a class="menu-link" href="pdp/faq.html">
 										<span class="menu-icon">
 											<!--begin::Svg Icon | path: icons/duotone/General/User.svg-->
 											<span class="svg-icon svg-icon-2">
@@ -690,7 +690,7 @@
                                             <tbody>
                                                 <tr>
                                                     <td class="text-nowrap align-middle">GEvS22001</td>
-                                                    <td class="text-nowrap align-middle"><a href="pdp/event/learning-blockchain-intellectual-property-on-the-blockchain.html">LEARNING BLOCKCHAIN: INTELLECTUAL PROPERTY ON THE BLOCKCHAIN</td>
+                                                    <td class="text-nowrap align-middle"><a href="" data-bs-toggle="modal" data-bs-target="#pdp_detail_event">LEARNING BLOCKCHAIN: INTELLECTUAL PROPERTY ON THE BLOCKCHAIN</td>
                                                     <td class="text-center align-middle">16/07/2022</td>
                                                     <td class="text-center align-middle">
                                                         <span class="badge badge-light-success fw-bolder fs-6">HelloGIT</span>
@@ -831,16 +831,16 @@
 							</div>
                             <a href="#">+ Thêm câu lạc bộ</a>
 							<!--end::Input group-->
-							<!--begin: upload eventBackground-->
+							<!--begin: upload eventPoster-->
 							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
 								<!--begin::Label-->
 								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
-									<span>Background sự kiện:</span>
+									<span>Poster sự kiện:</span>
 								</label>
 								<!--end::Label-->
-                                <input type="file" class="form-control form-control-solid" id="eventBackground">
+                                <input type="file" class="form-control form-control-solid" id="eventPoster">
 							</div>
-							<!--end: upload eventBackground-->							
+							<!--end: upload eventPoster-->							
 							<!--begin: QR code-->
                             <div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
 								<!--begin::Label-->
@@ -954,16 +954,16 @@
 							</div>
                             <a href="#">+ Thêm câu lạc bộ</a>
 							<!--end::Input group-->
-							<!--begin: upload eventBackground-->
+							<!--begin: upload eventPoster-->
 							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
 								<!--begin::Label-->
 								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
-									<span>Background sự kiện:</span>
+									<span>Poster sự kiện:</span>
 								</label>
 								<!--end::Label-->
-                                <input type="file" class="form-control form-control-solid" id="eventBackground">
+                                <input type="file" class="form-control form-control-solid" id="eventPoster">
 							</div>
-							<!--end: upload eventBackground-->		
+							<!--end: upload eventPoster-->		
                             <div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
 								<!--begin::Label-->
 								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
@@ -995,6 +995,116 @@
 			<!--end::Modal dialog-->
 		</div>
 		<!--end::Modal - Edit Event-->
+		<!--begin::Modal - Detail Event-->
+		<div class="modal fade" id="pdp_detail_event" tabindex="-1" aria-hidden="true">
+			<!--begin::Modal dialog-->
+			<div class="modal-dialog modal-dialog-centered mw-650px">
+				<!--begin::Modal content-->
+				<div class="modal-content rounded">
+					<!--begin::Modal header-->
+					<div class="modal-header pb-0 border-0 justify-content-end">
+						<!--begin::Close-->
+						<div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+							<!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+							<span class="svg-icon svg-icon-1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+									<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+								</svg>
+							</span>
+							<!--end::Svg Icon-->
+						</div>
+						<!--end::Close-->
+					</div>
+					<!--begin::Modal header-->
+					<!--begin::Modal body-->
+					<div class="modal-body scroll-y px-10 px-lg-15 pt-0 pb-15">
+						<!--begin:Form-->
+						<form id="kt_modal_evaluation_form" class="form" action="#">
+							<!--begin::Heading-->
+							<div class="mb-13 text-center">
+								<!--begin::Title-->
+								<h1 class="mb-3">Chi tiết sự kiện</h1>
+								<!--end::Title-->
+							</div>
+							<!--end::Heading-->		
+							<div class="row mb-8">
+								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
+									<span>ID:</span>
+								</label>
+								<div class="row">
+									<div class="col-md-12 fv-row">
+										<output type="text" class="form-control form-control-solid" style="margin-bottom:10px;">GEvS22001</output>
+									</div>
+								</div>
+							</div>
+							<!--end::Input group-->			
+							<!--begin::Input group-->
+							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
+								<!--begin::Label-->
+								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
+									<span>Tên sự kiện: </span>
+								</label>
+								<!--end::Label-->
+								<output type="text" class="form-control form-control-solid">LEARNING BLOCKCHAIN: INTELLECTUAL PROPERTY ON THE BLOCKCHAIN</output>
+							</div>
+							<!--end::Input group-->
+                            <!--begin::Input group-->
+							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
+								<!--begin::Label-->
+								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
+									<span>Ngày diễn ra:</span>
+								</label>
+								<!--end::Label-->
+                                <output type="text" class="form-control form-control-solid">16/07/2022</output>
+							</div>
+							<!--end::Input group-->
+                             <!--begin::Input group-->
+							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
+								<!--begin::Label-->
+								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
+									<span>Đồng tổ chức</span>
+								</label>
+								<!--end::Label-->
+								<output type="text" class="form-control form-control-solid">HELLOGIT_UoG Information Technology Club</output>
+							</div>
+							<!--end::Input group-->
+							<!--begin: upload eventPoster-->
+							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
+								<!--begin::Label-->
+								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
+									<span>Poster sự kiện:</span>
+								</label>
+								<!--end::Label-->
+								<output type="text" class="form-control form-control-solid">LEARNING BLOCKCHAIN: INTELLECTUAL PROPERTY ON THE BLOCKCHAIN</output>
+							</div>
+							<!--end: upload eventPoster-->		
+                            <div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
+								<!--begin::Label-->
+								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
+									<span>QR Code:</span>
+								</label>
+								<!--end::Label-->
+								<div class="text-center">
+                                    <img src="assets/media/qrcode/testqr.png" width="120px;" height="120px" alt="">
+                                </div>
+							</div>
+                            <!--begin::Actions-->
+							<div class="text-center">
+								<button type="reset" id="kt_modal_new_target_cancel" class="btn btn-light me-3">Thoát</button>    
+                                <button type="download" id="pdp_download_qr" class="btn btn-success me-3">Download QR</button>                         
+							</div>
+							<!--end::Actions-->
+						</form>
+						<!--end:Form-->
+					</div>
+					<!--end::Modal body-->
+				</div>
+				<!--end::Modal content-->
+			</div>
+			<!--end::Modal dialog-->
+		</div>
+		<!--end::Modal - Detail Event-->
 		<!--end::Drawers-->
 		<!--begin::Scrolltop-->
 		<div id="kt_scrolltop" class="scrolltop rounded-circle" data-kt-scrolltop="true">
