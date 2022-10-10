@@ -4,19 +4,21 @@
 	<!--begin::Head-->
 	<head><base href="../">
 		<meta charset="utf-8" />
-		<title>IT Support | Chú Huy</title>
+		<title>IT | Danh sách yêu cầu</title>
 		<meta name="description" content="Rider admin dashboard live demo. Check out all the features of the admin panel. A large number of settings, additional services and widgets." />
 		<meta name="keywords" content="Rider, bootstrap, bootstrap 5, dmin themes, free admin themes, bootstrap admin, bootstrap dashboard" />
 		<link rel="canonical" href="Https://preview.keenthemes.com/rider-free" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="shortcut icon" href="../assets/media/logos/favicon.png" />
+		<link rel="shortcut icon" href="assets/media/logos/favicon.png" />
 		<!--begin::Fonts-->
+		
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700" />
 		<!--end::Fonts-->
 		<!--begin::Global Stylesheets Bundle(used by all pages)-->
-		<link href="../assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="../assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Stylesheets Bundle-->
+
 	</head>
 	<!--end::Head-->
 	<!--begin::Body-->
@@ -61,7 +63,7 @@
 										<span class="menu-title">Trang chủ</span>
 									</a>
 								</div>
-								<div data-kt-menu-trigger="click" class="menu-item menu-accordion mb-1">
+								<div data-kt-menu-trigger="click" class="menu-item show menu-accordion mb-1">
 									<span class="menu-link">
 										<span class="menu-icon">
 											<!--begin::Svg Icon | path: icons/duotone/General/User.svg-->
@@ -89,10 +91,10 @@
 											</a>
 										</div>
 										<div class="menu-item">
-											<a class="menu-link" href="IT/completedrequest.html">
+											<a class="menu-link active" href="IT/completedrequest.html">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
-												</span> 
+												</span>
 												<span class="menu-title">Yêu cầu đã hoàn thành</span>
 											</a>
 										</div>
@@ -108,21 +110,20 @@
 				<!--begin::Wrapper-->
 				<div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
 					<!--begin::Header-->
-					<div id="kt_header" class="header" data-kt-sticky="true" data-kt-sticky-name="header" data-kt-sticky-offset="{default: '200px', lg: '75px;'}">
+					<div id="kt_header" class="header" data-kt-sticky="true" data-kt-sticky-name="header" data-kt-sticky-offset="{default: '200px', lg: '300px'}">
 						<!--begin::Container-->
 						<div class="container-fluid d-flex align-items-stretch justify-content-between" id="kt_header_container">
 							<!--begin::Page title-->
 							<div class="page-title d-flex flex-column align-items-start justify-content-center flex-wrap me-2 mb-5 mb-lg-0" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_content_container', lg: '#kt_header_container'}">
 								<!--begin::Heading-->
-								<h1 class="text-dark fw-bolder mt-1 mb-1 fs-2">Thông tin tài khoản</h1>
+								<h1 class="text-dark fw-bolder mt-1 mb-1 fs-2">Danh sách yêu cầu</h1>
 								<!--end::Heading-->
 								<!--begin::Breadcrumb-->
 								<ul class="breadcrumb fw-bold fs-base mb-1">
 									<li class="breadcrumb-item text-muted">
-										<a href="index.html" class="text-muted text-hover-primary">Trang chủ</a>
+										<a href="IT/dashboard.html" class="text-muted text-hover-primary">Trang chủ</a>
 									</li>
-									<li class="breadcrumb-item text-muted">Tài khoản</li>
-									<li class="breadcrumb-item text-dark">Thông tin tài khoản</li>
+									<li class="breadcrumb-item text-muted">Yêu cầu hỗ trợ </li>
 								</ul>
 								<!--end::Breadcrumb-->
 							</div>
@@ -148,11 +149,38 @@
 								<a href="index.html" class="d-lg-none">
 									<img alt="Logo" src="../assets/media/logos/logo-compact.png" width="100%" class="max-h-40px" />
 								</a>
-								<!--end::Logo-->>
+								<!--end::Logo-->
 							</div>
 							<!--end::Logo bar-->
 							<!--begin::Toolbar wrapper-->
 							<div class="d-flex align-items-stretch flex-shrink-0">
+								<!--begin::Search-->
+								<!--begin::Add-->
+								<div class="d-flex align-items-center ms-1 ms-lg-3">
+									<!--begin::drawer toggle-->
+									<div class="btn btn-icon btn-active-light-primary w-30px h-30px w-md-40px h-md-40px"  data-bs-toggle="modal" data-bs-target="#pdp_new_score">
+										<!--begin::Svg Icon | path: icons/duotone/Design/Substract.svg-->
+										<span class="svg-icon svg-icon-1">
+											<img src="assets/media/svg/files/add.svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1"></img>
+										</span>
+										<!--end::Svg Icon-->
+									</div>
+									<!--end::drawer toggle-->
+								</div>
+								<!--end:Add-->
+								<!--begin::Export-->
+								<div class="d-flex align-items-center ms-1 ms-lg-3">
+									<!--begin::drawer toggle-->
+									<div class="btn btn-icon btn-active-light-primary w-30px h-30px w-md-40px h-md-40px"  data-bs-toggle="modal" data-bs-target="#pdp_export_excel">
+										<!--begin::Svg Icon | path: icons/duotone/Design/Substract.svg-->
+										<span class="svg-icon svg-icon-1">
+											<img src="assets/media/svg/files/download.svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1"></img>
+										</span>
+										<!--end::Svg Icon-->
+									</div>
+									<!--end::drawer toggle-->
+								</div>
+								<!--end:Export-->
 								<!--begin:Activities-->
 								<div class="d-flex align-items-center ms-1 ms-lg-3">
 									<!--begin::Menu wrapper-->
@@ -376,134 +404,103 @@
 					<!--end::Header-->
 					<!--begin::Content-->
 					<div class="content d-flex flex-column flex-column-fluid fs-6" id="kt_content">
-						<!--begin::Container-->
-						<div class="container" id="kt_content_container">
-							<!--begin::Layout - Overview-->
-							<div class="d-flex flex-column flex-xl-row">
-								<!--begin::Sidebar-->
-								<div class="flex-column flex-lg-row-auto w-100 w-xl-325px mb-10">
-									<!--begin::Card-->
-									<div class="card card-flush" data-kt-sticky="true" data-kt-sticky-name="account-navbar" data-kt-sticky-offset="{default: false, xl: '80px'}" data-kt-sticky-width="{lg: '250px', xl: '325px'}" data-kt-sticky-left="auto" data-kt-sticky-top="90px" data-kt-sticky-animation="false" data-kt-sticky-zindex="95">
-										<!--begin::Card header-->
-										<div class="card-header justify-content-end">
-										</div>
-										<!--end::Card header-->
-										<!--begin::Card body-->
-										<div class="card-body pt-0 p-10">
-											<!--begin::Summary-->
-											<div class="d-flex flex-center flex-column mb-10">
-												<!--begin::Avatar-->
-												<div class="symbol mb-3 symbol-100px symbol-circle">
-													<img alt="Pic" src="assets/media/avatars/chuhuy.jpg" />
-												</div>
-												<!--end::Avatar-->
-												<!--begin::Name-->
-												<a href="#" class="fs-2 text-gray-800 text-hover-primary fw-bolder mb-1">Nguyễn Thanh Huy</a>
-												<!--end::Name-->
-												<!--begin::Position-->
-												<div class="d-flex flex-center">
-													<span class="badge badge-light-success fw-bolder fs-6 px-2 py-1 ms-2">IT Support</span>
-												</div>
-												<div class="fs-6 fw-bold text-gray-400 mb-2">IT Support Office</div>
-												<!--end::Position-->
+						<!--begin::Menu-->
+						<div class="row g-5" style="margin-left: 10px; margin-right: 10px;">
+							<div class="col-md-6 col-lg-2">
+								<form action>
+									<div class="row g-2">
+										<div class="input-group col-sm-6 col-md-6 col-lg-4 col-xl-3">
+											<span class="input-group-text" id="basic-addon1">Thời gian</span>
+											<select class="form-select" aria-label="Default select example" style="border-bottom-right-radius: 0.35rem; border-top-right-radius: 0.35rem;">
+												<option value="jan">Tháng 1</option>
+												<option value="feb">Tháng 2</option>
+												<option value="mar">Tháng 3</option>
+												<option value="apr">Tháng 4</option>
+												<option value="may">Tháng 5</option>
+												<option selected value="jun">Tháng 6</option>
+												<option value="jul">Tháng 7</option>
+												<option value="aug">Tháng 8</option>
+												<option value="sep">Tháng 9</option>
+												<option value="oct">Tháng 10</option>
+												<option value="nov">Tháng 11</option>
+												<option value="dec">Tháng 12</option>
+											</select>
+											<div class="invalid-feedback d-block">
 											</div>
-											<!--end::Summary-->
 										</div>
-										<!--end::Card body-->
 									</div>
-									<!--end::Card-->
-								</div>
-								<!--end::Sidebar-->
-								<!--begin::Content-->
-								<div class="flex-lg-row-fluid ms-lg-10">
-									<!--begin::details View-->
-									<div class="card mb-5 mb-xl-10" id="kt_profile_details_view">
-										<!--begin::Card header-->
-										<div class="card-header cursor-pointer">
-											<!--begin::Card title-->
-											<div class="card-title m-0">
-												<h3 class="fw-bolder m-0">Thông tin chi tiết</h3>
-											</div>
-											<!--end::Card title-->
-											<!--begin::Action-->
-											<a href="#" data-bs-toggle="modal" data-bs-target="#pdp_edit_info" class="btn btn-primary align-self-center">Chỉnh sửa</a>
-											<!--end::Action-->
-										</div>
-										<!--begin::Card header-->
-										<!--begin::Card body-->
-										<div class="card-body p-9">
-											<!--begin::Row-->
-											<div class="row mb-7">
-												<!--begin::Label-->
-												<label class="col-lg-4 fw-bold text-muted">Họ và tên</label>
-												<!--end::Label-->
-												<!--begin::Col-->
-												<div class="col-lg-8">
-													<span class="fw-bolder fs-6 text-dark">Nguyễn Thanh Huy</span>
-												</div>
-												<!--end::Col-->
-											</div>
-											<!--end::Row-->
-											<!--begin::Input group-->
-											<div class="row mb-7">
-												<!--begin::Label-->
-												<label class="col-lg-4 fw-bold text-muted">Campus</label>
-												<!--end::Label-->
-												<!--begin::Col-->
-												<div class="col-lg-8">
-													<span class="fw-bolder fs-6 text-dark">Hồ Chí Minh</span>
-												</div>
-												<!--end::Col-->
-											</div>
-											<!--end::Input group-->
-											<!--begin::Input group-->
-											<div class="row mb-7">
-												<!--begin::Label-->
-												<label class="col-lg-4 fw-bold text-muted">Email</label>
-												<!--end::Label-->
-												<!--begin::Col-->
-												<div class="col-lg-8">
-													<span class="fw-bolder fs-6 text-dark">huynt40@fe.edu.vn</span>
-												</div>
-												<!--end::Col-->
-											</div>
-											<!--end::Input group-->
-											<!--begin::Input group-->
-											<div class="row mb-7">
-												<!--begin::Label-->
-												<label class="col-lg-4 fw-bold text-muted">SĐT</label>
-												<!--end::Label-->
-												<!--begin::Col-->
-												<div class="col-lg-8">
-													<span class="fw-bolder fs-6 text-dark">0123456789</span>
-												</div>
-												<!--end::Col-->
-											</div>
-											<!--end::Input group-->
-											<!--begin::Input group-->
-											<div class="row mb-7">
-												<!--begin::Label-->
-												<label class="col-lg-4 fw-bold text-muted">Liên hệ</label>
-												<!--end::Label-->
-												<!--begin::Col-->
-												<div class="col-lg-8">
-													<a href="#" class="fw-bold fs-6 text-dark text-hover-primary">Chưa cập nhật</a>
-												</div>
-												<!--end::Col-->
-											</div>
-											<!--end::Input group-->
-										</div>
-										<!--end::Card body-->
-									</div>
-									<!--end::details View-->
-								</div>
-								<!--end::Content-->
+								</form>
 							</div>
-							<!--end::Layout - Overview-->
 						</div>
-						<!--end::Container-->
-					</div>
-					<!--end::Content-->
+						<!--end::Menu-->				
+						<!--begin::Score--> 
+                        <div class="e-panel card" style="margin-left:10px; margin-right: 10px;" >
+                            <div class="card-body" style="font-size:15px;">
+                                <div class="e-table">
+                                    <div class="table-responsive table-lg mt-3">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width:100px;">ID</th>
+                                                    <th style="width:200px;">Họ và tên</th>
+													<th style="width:150px;">MSSV</th>
+                                                    <th style="width:300px;">Nội dung cần hỗ trợ</th>
+                                                    <th style="width:150px;" class="text-center">Người hỗ trợ</th>
+													<th style="width:150px;" class="text-center">Đánh giá</th>
+													<th style="width:200px;">Nhận xét</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-nowrap align-middle">GISS220001</td>
+                                                    <td class="text-nowrap align-middle">Trần Vĩnh Tiến</td>
+													<td class="text-nowrap align-middle">GCS190159</td>
+                                                    <td class="text-nowrap align-middle">Cài phần mềm thi EOS</td>
+                                                    <td class="text-center align-middle"><a href="IT/overview.html">ducnv</a></td>
+													<td class="text-center align-middle">Tốt</td>
+													<td class="text-nowrap align-middle">Không biết gì hết</td>
+                                                </tr>  
+												<tr>
+													<td class="text-nowrap align-middle">GISS220002</td>
+                                                    <td class="text-nowrap align-middle">Trần Vĩnh Tiến</td>
+													<td class="text-nowrap align-middle">GCS190159</td>
+													<td class="text-nowrap align-middle">Cài máy ảo trên MacOS</td>
+                                                    <td class="text-center align-middle"><a href="IT/overview.html">huynt</a></td>
+													<td class="text-center align-middle">Tốt</td>
+													<td class="text-nowrap align-middle">Không biết gì hết</td>
+                                                </tr>  
+												<tr>
+                                                    <td class="text-nowrap align-middle">GISS220003</td>
+                                                    <td class="text-nowrap align-middle">Trần Vĩnh Tiến</td>
+													<td class="text-nowrap align-middle">GCS190159</td>
+													<td class="text-nowrap align-middle">Cài office</td>
+                                                    <td class="text-center align-middle"><a href="IT/overview.html">tientv</a></td>
+													<td class="text-center align-middle">Tốt</td>
+													<td class="text-nowrap align-middle">Không biết gì hết</td>
+                                                </tr>  
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end::Score-->
+                    </div>
+                    <!--end::Content-->
+                    <!--begin::Show result-->
+                    <div class="d-flex justify-content-center">
+                        <ul class="pagination mt-3 mb-0">
+                            <li class="disabled page-item"><a href="#" class="page-link">‹</a></li>
+                            <li class="active page-item"><a href="#" class="page-link">1</a></li>
+                            <li class="page-item"><a href="#" class="page-link">2</a></li>
+                            <li class="page-item"><a href="#" class="page-link">3</a></li>
+                            <li class="page-item"><a href="#" class="page-link">4</a></li>
+                            <li class="page-item"><a href="#" class="page-link">5</a></li>
+                            <li class="page-item"><a href="#" class="page-link">›</a></li>
+                            <li class="page-item"><a href="#" class="page-link">»</a></li>
+                        </ul>
+                    </div>
+                    <!--end::Show result-->
 					<!--begin::Footer-->
 					<div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
 						<!--begin::Container-->
@@ -571,14 +568,14 @@
 								<input type="text" class="form-control form-control-solid" placeholder="Nguyễn Thanh Huy" />
 							</div>
 							<!--end::Input group-->						
-							<!--begin::Input group-->
+                            <!--begin::Input group-->
 							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
 								<!--begin::Label-->
 								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
 									<span>Email:</span>
 								</label>
 								<!--end::Label-->
-								<input type="text" class="form-control form-control-solid" placeholder="huynt40@fe.edu.vn" />
+								<input type="text" class="form-control form-control-solid" placeholder="huynt40m@fe.edu.vn" />
 							</div>
 							<!--end::Input group-->
 							<!--begin::Input group-->
@@ -621,7 +618,7 @@
 								<input type="file" class="form-control form-control-solid" />
 							</div>
 							<!--end::Input group-->															
-							<!--begin::Actions-->
+                            <!--begin::Actions-->
 							<div class="text-center">
 								<button type="reset" id="kt_modal_new_target_cancel" class="btn btn-light me-3">Huỷ</button>
 								<button type="submit" id="kt_modal_new_target_submit" class="btn btn-primary">
@@ -641,8 +638,8 @@
 			<!--end::Modal dialog-->
 		</div>
 		<!--end::Modal - Edit info-->
-		<!--begin::Modal - New Club-->
-		<div class="modal fade" id="pdp_new_club" tabindex="-1" aria-hidden="true">
+		<!--begin::Modal - Export Excel-->
+		<div class="modal fade" id="pdp_export_excel" tabindex="-1" aria-hidden="true">
 			<!--begin::Modal dialog-->
 			<div class="modal-dialog modal-dialog-centered mw-650px">
 				<!--begin::Modal content-->
@@ -670,297 +667,59 @@
 							<!--begin::Heading-->
 							<div class="mb-13 text-center">
 								<!--begin::Title-->
-								<h1 class="mb-3">Tạo câu lạc bộ</h1>
-								<!--end::Title-->
-							</div>
-							<!--end::Heading-->				
-							<!--begin::Input group-->
-							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
-								<!--begin::Label-->
-								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
-									<span>Tên câu lạc bộ: </span>
-								</label>
-								<!--end::Label-->
-								<input type="text" class="form-control form-control-solid" />
-							</div>
-							<!--end::Input group-->						
-                            <!--begin::Input group-->
-							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
-								<!--begin::Label-->
-								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
-									<span>Email:</span>
-								</label>
-								<!--end::Label-->
-								<input type="text" class="form-control form-control-solid" />
-							</div>
-							<!--end::Input group-->
-							<!--begin::Input group-->
-							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
-								<!--begin::Label-->
-								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
-									<span>Nickname:</span>
-								</label>
-								<!--end::Label-->
-								<input type="text" class="form-control form-control-solid" />
-							</div>
-							<!--end::Input group-->	
-							<!--begin::Input group-->
-							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
-								<!--begin::Label-->
-								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
-									<span>Fanpage:</span>
-								</label>
-								<!--end::Label-->
-								<input type="text" class="form-control form-control-solid" />
-							</div>
-							<!--end::Input group-->	
-							<!--begin::Input group-->
-							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
-								<!--begin::Label-->
-								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
-									<span>Ngày thành lập:</span>
-								</label>
-								<!--end::Label-->
-								<input type="date" class="form-control form-control-solid" />
-							</div>
-							<!--end::Input group-->	
-							<!--begin::Input group-->
-							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
-								<!--begin::Label-->
-								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
-									<span>Logo câu lạc bộ:</span>
-								</label>
-								<!--end::Label-->
-								<input type="file" class="form-control form-control-solid" />
-							</div>
-							<!--end::Input group-->															
-                            <!--begin::Actions-->
-							<div class="text-center">
-								<button type="reset" id="kt_modal_new_target_cancel" class="btn btn-light me-3">Huỷ</button>
-								<button type="submit" id="kt_modal_new_target_submit" class="btn btn-primary">
-									<span class="indicator-label">Lưu</span>
-									<span class="indicator-progress">Đang xử lý...
-									<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-								</button>
-							</div>
-							<!--end::Actions-->
-						</form>
-						<!--end:Form-->
-					</div>
-					<!--end::Modal body-->
-				</div>
-				<!--end::Modal content-->
-			</div>
-			<!--end::Modal dialog-->
-		</div>
-		<!--end::Modal - New Club-->
-		<!--begin::Modal - New Event-->
-		<div class="modal fade" id="pdp_new_event" tabindex="-1" aria-hidden="true">
-			<!--begin::Modal dialog-->
-			<div class="modal-dialog modal-dialog-centered mw-650px">
-				<!--begin::Modal content-->
-				<div class="modal-content rounded">
-					<!--begin::Modal header-->
-					<div class="modal-header pb-0 border-0 justify-content-end">
-						<!--begin::Close-->
-						<div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
-							<!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
-							<span class="svg-icon svg-icon-1">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-									<rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
-									<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
-								</svg>
-							</span>
-							<!--end::Svg Icon-->
-						</div>
-						<!--end::Close-->
-					</div>
-					<!--begin::Modal header-->
-					<!--begin::Modal body-->
-					<div class="modal-body scroll-y px-10 px-lg-15 pt-0 pb-15">
-						<!--begin:Form-->
-						<form id="kt_modal_evaluation_form" class="form" action="#">
-							<!--begin::Heading-->
-							<div class="mb-13 text-center">
-								<!--begin::Title-->
-								<h1 class="mb-3">Tạo sự kiện</h1>
+								<h1 class="mb-3">Xác nhận xuất file excel</h1>
 								<!--end::Title-->
 							</div>
 							<!--end::Heading-->		
-							<div class="row mb-8">
-								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
-									<span>ID:</span>
-								</label>
+                            <!--begin::Input group-->
+                            <div class="row mb-8">
 								<div class="row">
-									<div class="col-md-12 fv-row">
-										<output type="text" class="form-control form-control-solid" style="margin-bottom:10px;">GEvS22002</output>
+									<div class="col-md-6 fv-row">
+										<label class="d-flex align-items-center fs-6 fw-bold mb-2">
+											<span>Từ:</span>
+										</label>
+										<select name="date_typer" aria-label="Select a Timezone" data-control="select2" data-placeholder="Period" class="form-select form-select-solid">
+											<option value="jan">Tháng 1</option>
+											<option value="feb">Tháng 2</option>
+											<option value="mar">Tháng 3</option>
+											<option value="apr">Tháng 4</option>
+											<option value="may">Tháng 5</option>
+											<option value="jun">Tháng 6</option>
+											<option value="jul">Tháng 7</option>
+											<option value="aug">Tháng 8</option>
+											<option value="sep">Tháng 9</option>
+											<option value="oct">Tháng 10</option>
+											<option value="nov">Tháng 11</option>
+											<option value="dec">Tháng 12</option>
+										</select>
+									</div>
+									<div class="col-md-6 fv-row">
+										<label class="d-flex align-items-center fs-6 fw-bold mb-2">
+											<span>Đến:</span>
+										</label>
+										<select name="date_typer" aria-label="Select a Timezone" data-control="select2" data-placeholder="Period" class="form-select form-select-solid">
+											<option value="jan">Tháng 1</option>
+											<option value="feb">Tháng 2</option>
+											<option value="mar">Tháng 3</option>
+											<option value="apr">Tháng 4</option>
+											<option value="may">Tháng 5</option>
+											<option value="jun">Tháng 6</option>
+											<option value="jul">Tháng 7</option>
+											<option value="aug">Tháng 8</option>
+											<option value="sep">Tháng 9</option>
+											<option value="oct">Tháng 10</option>
+											<option value="nov">Tháng 11</option>
+											<option value="dec">Tháng 12</option>
+										</select>
 									</div>
 								</div>
-							</div>
-							<!--end::Input group-->			
-							<!--begin::Input group-->
-							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
-								<!--begin::Label-->
-								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
-									<span>Tên sự kiện: </span>
-								</label>
-								<!--end::Label-->
-								<input type="text" class="form-control form-control-solid" />
-							</div>
-							<!--end::Input group-->
-                            <!--begin::Input group-->
-							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
-								<!--begin::Label-->
-								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
-									<span>Ngày diễn ra:</span>
-								</label>
-								<!--end::Label-->
-                                <input type="date" class="form-control form-control-solid" id="Date">
-							</div>
-							<!--end::Input group-->
-                             <!--begin::Input group-->
-							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
-								<!--begin::Label-->
-								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
-									<span>Đồng tổ chức</span>
-								</label>
-								<!--end::Label-->
-                                <select name="club_typer" aria-label="Select a Club" data-control="select_club" data-placeholder="Câu lạc bộ" class="form-select form-select-solid">
-                                    <option selected>Câu lạc bộ</option>
-                                    <option value="">HELLOGIT_UoG Information Technology Club</option>
-                                    <option value="">Greenwich Page Turner Club</option>
-                                    <option value="none">None</option>
-                                </select>
-							</div>
-                            <a href="#">+ Thêm câu lạc bộ</a>
-							<!--end::Input group-->
-							<!--begin: upload eventPoster-->
-							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
-								<!--begin::Label-->
-								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
-									<span>Poster sự kiện:</span>
-								</label>
-								<!--end::Label-->
-                                <input type="file" class="form-control form-control-solid" id="eventPoster">
-							</div>
-							<!--end: upload eventPoster-->							
-							<!--begin: QR code-->
-                            <div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
-								<!--begin::Label-->
-								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
-									<span>QR Code:</span>
-								</label>
-								<!--end::Label-->
-								<div class="text-center">
-                                    <img src="assets/media/qrcode/testqr.png" width="120px;" height="120px" alt="">
-                                </div>
-							</div>
-							<!--end: QR code-->
-                            <!--begin::Actions-->
-							<div class="text-center">
-								<button type="reset" id="kt_modal_new_target_cancel" class="btn btn-light me-3">Huỷ</button>    
-                                <button type="download" id="pdp_download_qr" class="btn btn-success me-3">Download QR</button>                         
-								<button type="submit" id="kt_modal_new_target_submit" class="btn btn-primary">
-									<span class="indicator-label">Lưu</span>
-									<span class="indicator-progress">Đang xử lý...
-									<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-								</button>
-							</div>
-							<!--end::Actions-->
-						</form>
-						<!--end:Form-->
-					</div>
-					<!--end::Modal body-->
-				</div>
-				<!--end::Modal content-->
-			</div>
-			<!--end::Modal dialog-->
-		</div>
-		<!--end::Modal - New Event-->
-		<!--begin::Modal - New Student-->
-		<div class="modal fade" id="pdp_new_student" tabindex="-1" aria-hidden="true">
-			<!--begin::Modal dialog-->
-			<div class="modal-dialog modal-dialog-centered mw-650px">
-				<!--begin::Modal content-->
-				<div class="modal-content rounded">
-					<!--begin::Modal header-->
-					<div class="modal-header pb-0 border-0 justify-content-end">
-						<!--begin::Close-->
-						<div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
-							<!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
-							<span class="svg-icon svg-icon-1">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-									<rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
-									<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
-								</svg>
-							</span>
-							<!--end::Svg Icon-->
-						</div>
-						<!--end::Close-->
-					</div>
-					<!--begin::Modal header-->
-					<!--begin::Modal body-->
-					<div class="modal-body scroll-y px-10 px-lg-15 pt-0 pb-15">
-						<!--begin:Form-->
-						<form id="kt_modal_evaluation_form" class="form" action="#">
-							<!--begin::Heading-->
-							<div class="mb-13 text-center">
-								<!--begin::Title-->
-								<h1 class="mb-3">Thêm sinh viên</h1>
-								<!--end::Title-->
-							</div>
-							<!--end::Heading-->		
-							<div class="row mb-8">
-								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
-									<span>ID:</span>
-								</label>
-								<div class="row">
-									<div class="col-md-11 fv-row">
-										<input type="text" class="form-control form-control-solid" style="margin-bottom:10px;"></input>
-									</div>
-									<div class="col-md-1 fv-row">
-										<div class="btn btn-icon btn-active-light-primary">
-											<!--begin::Svg Icon | path: icons/duotone/General/Search.svg-->
-											<span class="svg-icon svg-icon-1">
-												<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-													<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-														<rect x="0" y="0" width="24" height="24" />
-														<path d="M14.2928932,16.7071068 C13.9023689,16.3165825 13.9023689,15.6834175 14.2928932,15.2928932 C14.6834175,14.9023689 15.3165825,14.9023689 15.7071068,15.2928932 L19.7071068,19.2928932 C20.0976311,19.6834175 20.0976311,20.3165825 19.7071068,20.7071068 C19.3165825,21.0976311 18.6834175,21.0976311 18.2928932,20.7071068 L14.2928932,16.7071068 Z" fill="#000000" fill-rule="nonzero" opacity="0.3" />
-														<path d="M11,16 C13.7614237,16 16,13.7614237 16,11 C16,8.23857625 13.7614237,6 11,6 C8.23857625,6 6,8.23857625 6,11 C6,13.7614237 8.23857625,16 11,16 Z M11,18 C7.13400675,18 4,14.8659932 4,11 C4,7.13400675 7.13400675,4 11,4 C14.8659932,4 18,7.13400675 18,11 C18,14.8659932 14.8659932,18 11,18 Z" fill="#000000" fill-rule="nonzero" />
-													</g>
-												</svg>
-											</span>
-											<!--end::Svg Icon-->
-										</div>
-									</div>
-								</div>
-							</div>
-							<!--end::Input group-->			
-							<!--begin::Input group-->
-							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
-								<!--begin::Label-->
-								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
-									<span>Họ và tên: </span>
-								</label>
-								<!--end::Label-->
-								<input type="text" class="form-control form-control-solid" />
-							</div>
-							<!--end::Input group-->
-                            <!--begin::Input group-->
-							<div class="d-flex flex-column mb-8 fv-row" style="margin-top: 30px;">
-								<!--begin::Label-->
-								<label class="d-flex align-items-center fs-6 fw-bold mb-2">
-									<span>Email:</span>
-								</label>
-								<!--end::Label-->
-								<input type="text" class="form-control form-control-solid" />
 							</div>
 							<!--end::Input group-->
                             <!--begin::Actions-->
 							<div class="text-center">
 								<button type="reset" id="kt_modal_new_target_cancel" class="btn btn-light me-3">Huỷ</button>
 								<button type="submit" id="kt_modal_new_target_submit" class="btn btn-primary">
-									<span class="indicator-label">Lưu</span>
+									<span class="indicator-label">Xuất</span>
 									<span class="indicator-progress">Đang xử lý...
 									<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
 								</button>
@@ -975,7 +734,7 @@
 			</div>
 			<!--end::Modal dialog-->
 		</div>
-		<!--end::Modal - New Student-->
+		<!--end::Modal - Export Excel-->
 		<!--begin::Scrolltop-->
 		<div id="kt_scrolltop" class="scrolltop rounded-circle" data-kt-scrolltop="true">
 			<!--begin::Svg Icon | path: icons/duotone/Navigation/Up-2.svg-->
@@ -996,6 +755,9 @@
 		<script src="assets/plugins/global/plugins.bundle.js"></script>
 		<script src="assets/js/scripts.bundle.js"></script>
 		<!--end::Global Javascript Bundle-->
+		<!--begin::Page Vendors Javascript(used by this page)-->
+		<script src="assets/plugins/custom/fslightbox/fslightbox.bundle.js"></script>
+		<!--end::Page Vendors Javascript-->
 		<!--begin::Page Custom Javascript(used by this page)-->
 		<script src="assets/js/custom/widgets.js"></script>
 		<!--end::Page Custom Javascript-->
